@@ -9,6 +9,6 @@
   "author": "Tyrone Johnston",
   "license": "CC0-1.0",
   "dependencies": {
-    "needle": "^2.6.0"
+    "needle": "^2.7.0"
   }
 }
