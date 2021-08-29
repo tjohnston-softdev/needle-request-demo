@@ -20,8 +20,7 @@ The 'needle' library is both actively used and maintained with regular updates a
 
 ## Endpoints
 
-**GET:** https://jsonplaceholder.typicode.com/posts/1
-
+**GET:** https://jsonplaceholder.typicode.com/posts/1  
 **POST:** https://jsonplaceholder.typicode.com/posts
 
 ```
