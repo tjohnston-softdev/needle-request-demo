@@ -8,7 +8,6 @@ Initially, I settled with [axios](https://www.npmjs.com/package/axios) but I fou
 
 The 'needle' library is both actively used and maintained with regular updates and several million downloads per week.
 
----
 
 ## Usage
 
@@ -16,7 +15,6 @@ The 'needle' library is both actively used and maintained with regular updates a
 2. Run `npm install` to download the 'needle' package.
 3. Run `node index` to execute the HTTP demo.
 
----
 
 ## Endpoints
 
@@ -35,7 +33,6 @@ The 'needle' library is both actively used and maintained with regular updates a
 
 API provided by [JSONPlaceholder](https://jsonplaceholder.typicode.com/)
 
----
 
 ## Credits
 
@@ -43,7 +40,6 @@ API provided by [JSONPlaceholder](https://jsonplaceholder.typicode.com/)
 * [@tomas](https://github.com/tomas) - Lead developer of 'needle' library.
 * [@typicode](https://github.com/typicode) - Host of JSONPlaceholder fake API.
 
----
 
 ## Disclaimer
 
