@@ -9,6 +9,7 @@ var delComp = false;
 console.log("Running Demo . . .");
 sendGetRequest();
 sendPostRequest();
+sendPutRequest();
 
 
 // GET existing object.
@@ -57,10 +58,34 @@ function sendPostRequest()
 }
 
 
+// Modify existing object - PUT
+function sendPutRequest()
+{
+	var reqBody = defineRequestBody();
+	
+	console.log("Sending PUT request");
+	
+	needle.put(resourceURL, reqBody, function (needleErr, needleResp)
+	{
+		if (needleErr !== null)
+		{
+			writeErrorMessage("PUT", needleErr);
+		}
+		else
+		{
+			writeResponseMessage("PUT", needleResp);
+		}
+		
+		putComp = true;
+		checkComplete();
+	});
+}
+
+
 // Ends demo after both requests are complete.
 function checkComplete()
 {
-	if (getComp === true && postComp === true)
+	if (getComp === true && postComp === true && putComp === true)
 	{
 		console.log("Complete");
 		process.exitCode = 1;
