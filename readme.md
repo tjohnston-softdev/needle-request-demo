@@ -12,9 +12,9 @@ The 'needle' library is both actively used and maintained with regular updates a
 
 ## Usage
 
-* Open a terminal in the project folder
-* Run `npm install` to download the 'needle' package.
-* Run `node index` to execute the HTTP demo.
+1. Open a terminal in the project folder
+2. Run `npm install` to download the 'needle' package.
+3. Run `node index` to execute the HTTP demo.
 
 ---
 
