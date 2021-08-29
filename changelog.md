@@ -1,4 +1,4 @@
 # Changelog
 
-**./readme.md**
-* JSON syntax highlighting for POST body.
+**./package.json**
+* Updated package from 2.8.0 to 3.0.0
