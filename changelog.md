@@ -1,10 +1,6 @@
 # Changelog
 
 **./index.js**
-* Declared new global variables:
-	* putComp
-	* delComp
-* Renamed global variables:
-	* 'getComplete' to 'getComp'
-	* 'postComplete' to 'postComp'
-* The URL in 'sendPostRequest' is now a global variable 'modifyURL'
+* The URL from 'sendGetRequest' is now a global variable 'resourceURL' (Also PUT, DELETE)
+* Moved 'modifyURL' back into 'sendPostRequest' as a literal string. (POST only)
+* Renamed 'definePostBody' function to 'defineRequestBody'

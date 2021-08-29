@@ -1,5 +1,5 @@
 const needle = require("needle");
-const modifyURL = "https://jsonplaceholder.typicode.com/posts";
+const resourceURL = "https://jsonplaceholder.typicode.com/posts/1"
 
 var getComp = false;
 var postComp = false;
@@ -16,7 +16,7 @@ function sendGetRequest()
 {
 	console.log("Sending GET request");
 	
-	needle.get("https://jsonplaceholder.typicode.com/posts/1", function (needleErr, needleResp)
+	needle.get(resourceURL, function (needleErr, needleResp)
 	{
 		if (needleErr !== null)
 		{
@@ -36,11 +36,11 @@ function sendGetRequest()
 // POST new object.
 function sendPostRequest()
 {
-	var reqBody = definePostBody();
+	var reqBody = defineRequestBody();
 	
 	console.log("Sending POST request");
 	
-	needle.post(modifyURL, reqBody, function (needleErr, needleResp)
+	needle.post("https://jsonplaceholder.typicode.com/posts", reqBody, function (needleErr, needleResp)
 	{
 		if (needleErr !== null)
 		{
@@ -98,7 +98,7 @@ function writeResponseMessage(httpMethod, respObj)
 
 
 // POST request body.
-function definePostBody()
+function defineRequestBody()
 {
 	var defineRes = {};
 	
