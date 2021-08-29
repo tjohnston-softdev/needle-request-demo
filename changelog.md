@@ -1,4 +1,3 @@
 # Changelog
 
-**./readme.md**
-* Re-worded 'needle' repo activity.
+3.0.0 update complete
