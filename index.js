@@ -7,9 +7,11 @@ var putComp = false;
 var delComp = false;
 
 console.log("Running Demo . . .");
+
 sendGetRequest();
 sendPostRequest();
 sendPutRequest();
+sendDeleteRequest();
 
 
 // Read existing object - GET
@@ -81,11 +83,32 @@ function sendPutRequest()
 	});
 }
 
+// Remove existing object - DELETE
+function sendDeleteRequest()
+{
+	console.log("Sending DELETE request");
+	
+	needle.delete(resourceURL, null, function (needleErr, needleResp)
+	{
+		if (needleErr !== null)
+		{
+			writeErrorMessage("DELETE", needleErr);
+		}
+		else
+		{
+			writeResponseMessage("DELETE", needleResp);
+		}
+		
+		delComp = true;
+		checkComplete();
+	});
+}
+
 
 // Ends demo after all requests have been completed.
 function checkComplete()
 {
-	if (getComp === true && postComp === true && putComp === true)
+	if (getComp === true && postComp === true && putComp === true && delComp === true)
 	{
 		console.log("Complete");
 		process.exitCode = 1;
