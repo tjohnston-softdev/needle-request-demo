@@ -44,4 +44,3 @@ API provided by [JSONPlaceholder](https://jsonplaceholder.typicode.com/)
 ## Disclaimer
 
 This demo project is licensed under [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/). I only wrote this as a reference for using the 'needle' library to make HTTP requests. This is not an official demo and I am in no way affiliated with [@tomas](https://github.com/tomas) or anybody else who has worked on the 'needle' library. While I will make an effort to maintain this repository where applicable, I do not accept any responsibility for how you use this code or 'needle' as a whole.
-
