@@ -1,4 +1,4 @@
 # Changelog
 
 **./readme.md**
-* Reformatted endpoint URL line breaks.
+* JSON syntax highlighting for POST body.

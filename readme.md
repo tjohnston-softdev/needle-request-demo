@@ -23,7 +23,7 @@ The 'needle' library is both actively used and maintained with regular updates a
 **GET:** https://jsonplaceholder.typicode.com/posts/1  
 **POST:** https://jsonplaceholder.typicode.com/posts
 
-```
+```json
 {
 	"title": "Hello World",
 	"body": "The quick Brown Fox jumps over the lazy Dog",
