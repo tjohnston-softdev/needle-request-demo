@@ -1,5 +1,5 @@
 # Changelog
 
 **./readme.md**
-* Included PUT and DELETE endpoints.
-* They are the same as GET
+* Moved all request method endpoints to separate lines.
+* Even if they are the same URL.
