@@ -1,4 +1,4 @@
 # Changelog
 
 **./readme.md**
-* Removed horizontal lines
+* Re-worded 'needle' repo activity.
