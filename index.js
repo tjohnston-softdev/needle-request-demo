@@ -12,7 +12,7 @@ sendPostRequest();
 sendPutRequest();
 
 
-// GET existing object.
+// Read existing object - GET
 function sendGetRequest()
 {
 	console.log("Sending GET request");
@@ -34,7 +34,7 @@ function sendGetRequest()
 }
 
 
-// POST new object.
+// Create new object - POST
 function sendPostRequest()
 {
 	var reqBody = defineRequestBody();
@@ -82,7 +82,7 @@ function sendPutRequest()
 }
 
 
-// Ends demo after both requests are complete.
+// Ends demo after all requests have been completed.
 function checkComplete()
 {
 	if (getComp === true && postComp === true && putComp === true)
@@ -122,7 +122,7 @@ function writeResponseMessage(httpMethod, respObj)
 }
 
 
-// POST request body.
+// POST and PUT request body.
 function defineRequestBody()
 {
 	var defineRes = {};
