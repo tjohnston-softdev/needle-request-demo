@@ -1,6 +1,10 @@
 const needle = require("needle");
-var getComplete = false;
-var postComplete = false;
+const modifyURL = "https://jsonplaceholder.typicode.com/posts";
+
+var getComp = false;
+var postComp = false;
+var putComp = false;
+var delComp = false;
 
 console.log("Running Demo . . .");
 sendGetRequest();
@@ -23,7 +27,7 @@ function sendGetRequest()
 			writeResponseMessage("GET", needleResp);
 		}
 		
-		getComplete = true;
+		getComp = true;
 		checkComplete();
 	});
 }
@@ -36,7 +40,7 @@ function sendPostRequest()
 	
 	console.log("Sending POST request");
 	
-	needle.post("https://jsonplaceholder.typicode.com/posts", reqBody, function (needleErr, needleResp)
+	needle.post(modifyURL, reqBody, function (needleErr, needleResp)
 	{
 		if (needleErr !== null)
 		{
@@ -47,7 +51,7 @@ function sendPostRequest()
 			writeResponseMessage("POST", needleResp);
 		}
 		
-		postComplete = true;
+		postComp = true;
 		checkComplete();
 	});
 }
@@ -56,7 +60,7 @@ function sendPostRequest()
 // Ends demo after both requests are complete.
 function checkComplete()
 {
-	if (getComplete === true && postComplete === true)
+	if (getComp === true && postComp === true)
 	{
 		console.log("Complete");
 		process.exitCode = 1;
