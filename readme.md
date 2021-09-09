@@ -6,7 +6,7 @@ When I first started using Node JS, I used the [request](https://www.npmjs.com/p
 
 Initially, I settled with [axios](https://www.npmjs.com/package/axios) but I found the promise structure to be a bit of a pain. I prefer to use callbacks where possible like what 'request' provided. I did some more searching and found 'needle', which offers both promise and callback structures.
 
-The 'needle' library is being actively maintained with regular updates. It is also a popular choice for HTTP requests with several million downloads per week.
+The 'needle' library is being actively maintained with new versions released on a regular basis. It is also a popular choice for making HTTP requests with several million downloads per week.
 
 
 ## Usage
