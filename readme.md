@@ -23,7 +23,7 @@ The 'needle' library is being actively maintained with new versions released on 
 **PUT:** https://jsonplaceholder.typicode.com/posts/1  
 **DELETE:** https://jsonplaceholder.typicode.com/posts/1
 
-```json
+```javascript
 {
 	"title": "Hello World",
 	"body": "The quick Brown Fox jumps over the lazy Dog",
