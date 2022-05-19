@@ -108,7 +108,7 @@ function sendDeleteRequest()
 // Ends demo after all requests have been completed.
 function checkComplete()
 {
-	if (getComp === true && postComp === true && putComp === true && delComp === true)
+	if (getComp && postComp && putComp && delComp)
 	{
 		console.log("Complete");
 		process.exitCode = 1;
@@ -119,29 +119,16 @@ function checkComplete()
 // Request error message.
 function writeErrorMessage(httpMethod, errObj)
 {
-	var writeRes = "";
-	
-	writeRes += "Error sending ";
-	writeRes += httpMethod;
-	writeRes += " request.\n";
-	writeRes += errObj.message;
-	
-	console.log(writeRes);
+	var prepTxt = ["Error sending ", httpMethod, " request.\n", errObj.message].join("");
+	console.log(prepTxt);
 }
 
 
 // Response status message.
 function writeResponseMessage(httpMethod, respObj)
 {
-	var writeRes = "";
-	
-	writeRes += httpMethod;
-	writeRes += " status ";
-	writeRes += respObj.statusCode;
-	writeRes += " - ";
-	writeRes += respObj.statusMessage;
-	
-	console.log(writeRes);
+	var prepTxt = [httpMethod, " status ", respObj.statusCode, " - ", respObj.statusMessage].join("");
+	console.log(prepTxt);
 }
 
 
